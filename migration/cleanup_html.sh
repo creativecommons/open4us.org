@@ -56,6 +56,19 @@ function _remove_google_analytics {
 }
 
 
+function _cleanup_site_urls {
+    printf "\e[1m\e[7m %-80s\e[0m\n" \
+        'Clean-up site URLs (remove protocol and domain)'
+    for _file in $(find docs -type f -name '*.html')
+    do
+        ${SED} \
+            -e's#https\?://open4us.org/#/#g' \
+            --in-place "${_file}"
+    done
+    echo
+}
+
+
 function _cleanup_plaintext_whitespace {
     printf "\e[1m\e[7m %-80s\e[0m\n" 'Clean-up whitespace in plaintext files'
     # plaintext files with trailing whitespace
@@ -73,4 +86,5 @@ cd "${0%/*}/.." >/dev/null
 # Run clean-up functions
 _remove_deprecated_links_meta_from_html_files
 _remove_google_analytics
+_cleanup_site_urls
 _cleanup_plaintext_whitespace
