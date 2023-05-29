@@ -229,7 +229,7 @@ h1.entry-title a:hover {
 
 
 
-article.post, article.type-page { 
+article.post, article.type-page {
     box-shadow: 0px 0px 11px 12px white;
     background-color: white;
     margin-top: 25px;
@@ -313,7 +313,7 @@ p.license_info {
 }
 
 .license_icon {
-    float: right; 
+    float: right;
     margin-top: -8px;
 }
 
@@ -390,7 +390,7 @@ p.license_info {
 
 #access .menu li.current_page_item:first-child {
     margin-right: 10px;
-}    
+}
 
 
 #access .menu li.current_page_item a {
@@ -425,7 +425,7 @@ p.license_info {
     text-decoration: none;
     color: inherit;
     padding-left: 9px;
-    padding-right: 9px;    
+    padding-right: 9px;
 }
 #access .menu li:not(.current_page_item) a:hover {
     color: #292626;
@@ -442,7 +442,7 @@ p.license_info {
     background-color: #aaa;
     background-color: rgba(120, 120, 120, .9);
     border-radius: 8px;
-   
+
     padding: 8px;
     padding-top: 6px;
     padding-bottom: 12px;

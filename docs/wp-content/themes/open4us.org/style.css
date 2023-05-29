@@ -321,7 +321,7 @@ body {
 }
 /*#page {
 	background: #fff;
-	
+
 }*/
 
 /* Headings */
@@ -578,10 +578,10 @@ a:hover {
 }
 #access li:hover > a,
 #access a:focus {
-    /*background: #f9f9f9; 
+    /*background: #f9f9f9;
       background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
       background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); 
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5));
       background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
 	color: #373737;*/
 }

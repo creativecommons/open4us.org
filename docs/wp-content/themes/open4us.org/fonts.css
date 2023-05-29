@@ -24,8 +24,8 @@
 @font-face {
 	font-family: 'goudy_bookletter_1911';
 	src: url('/wp-content/themes/open4us.org/fonts/GoudyBookletter1911.eot');
-	src: local('♫'), 
-             url('/wp-content/themes/open4us.org/fonts/GoudyBookletter1911.ttf') format('truetype'), 
+	src: local('♫'),
+             url('/wp-content/themes/open4us.org/fonts/GoudyBookletter1911.ttf') format('truetype'),
              url('/wp-content/themes/open4us.org/fonts/GoudyBookletter1911.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -34,7 +34,7 @@
 @font-face {
 	font-family: 'urw_palladio';
 	src: url('/wp-content/themes/open4us.org/fonts/urw_palladio.eot');
-	src: local('♫'), 
+	src: local('♫'),
              url('/wp-content/themes/open4us.org/fonts/urw_palladio.ttf') format('truetype'),
              url('/wp-content/themes/open4us.org/fonts/urw_palladio.svg') format('svg');
 	font-weight: normal;
