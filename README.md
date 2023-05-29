@@ -5,6 +5,11 @@
 [open4us]: https://open4us.org/
 
 
+## Migration from WordPress to static files
+
+See [`migration/README.md`](migration/README.md)
+
+
 ## License
 
 [![CC BY 4.0 license button][cc-by-png]][cc-by]
