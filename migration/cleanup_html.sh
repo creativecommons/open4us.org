@@ -42,6 +42,20 @@ function _remove_deprecated_links_meta_from_html_files {
 }
 
 
+function _remove_google_analytics {
+    printf "\e[1m\e[7m %-80s\e[0m\n" \
+        'Remove Google Analytics'
+    for _file in $(find docs -type f -name '*.html')
+    do
+        ${SED} \
+            --null-data \
+            -e's#<!-- Begin Google.*<!-- End Google Analytics -->##' \
+            --in-place "${_file}"
+    done
+    echo
+}
+
+
 function _cleanup_plaintext_whitespace {
     printf "\e[1m\e[7m %-80s\e[0m\n" 'Clean-up whitespace in plaintext files'
     # plaintext files with trailing whitespace
@@ -58,4 +72,5 @@ function _cleanup_plaintext_whitespace {
 cd "${0%/*}/.." >/dev/null
 # Run clean-up functions
 _remove_deprecated_links_meta_from_html_files
+_remove_google_analytics
 _cleanup_plaintext_whitespace
