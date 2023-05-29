@@ -36,7 +36,10 @@ Process to migrate from WordPress to static files:
     find docs -type f -exec chmod -x {} +
     ```
 5. Added `docs/.nojekyll` (empty file)
-6. Ran `./migration/migration/cleanup_html.sh`
+6. Export files from Panethon and add all files within `wp-content/uploads/`
+7. Add missing JavaScript file:
+   - https://github.com/creativecommons/open4us.org/commit/da8d72cd22b3f0b7ef09c3dc967c82f6e645f7e3
+7. Ran `./migration/migration/cleanup_html.sh`
    - Remove deprected links and meta from HTML files
    - Clean-up whitespace in plaintext files
 
