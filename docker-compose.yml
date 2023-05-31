@@ -1,0 +1,15 @@
+# https://docs.docker.com/compose/compose-file/compose-file-v2/
+
+version: "2.4"
+
+services:
+
+  web:
+    # https://hub.docker.com/_/nginx
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    restart: on-failure
+    volumes:
+      # Mount website directory
+      - ./docs:/usr/share/nginx/html:ro
